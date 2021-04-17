@@ -1,0 +1,69 @@
+<!-- Create a basic HTML calculator with buttons 
+    for each digit, each of the above functions and an “Equals” key.
+    Do not worry about wiring up the JS just yet.
+    There should also be a display for the calculator, 
+    go ahead and fill it with some dummy numbers so you can get it looking right.
+    Add a “clear” button. -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <meta name="description" content="Calculator" />
+    <meta name="author" content="Jarryd Cheso" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading"><h1>Calculator</h1></div>
+      <div class="calculator">
+        <div class="display"></div>
+        <div class="buttons">
+          <div class="button-row">
+            <input
+              class="button-top-left"
+              type="button"
+              value="Clear"
+              onclick=""
+            />
+            <input
+              class="button-top-right"
+              type="button"
+              value="Delete"
+              onclick=""
+            />
+          </div>
+          <div class="button-row">
+            <input class="button" type="button" value="7" onclick="" />
+            <input class="button" type="button" value="8" onclick="" />
+            <input class="button" type="button" value="9" onclick="" />
+            <input class="button" type="button" value="/" onclick="" />
+          </div>
+          <div class="button-row">
+            <input class="button" type="button" value="4" onclick="" />
+            <input class="button" type="button" value="5" onclick="" />
+            <input class="button" type="button" value="6" onclick="" />
+            <input class="button" type="button" value="*" onclick="" />
+          </div>
+          <div class="button-row">
+            <input class="button" type="button" value="1" onclick="" />
+            <input class="button" type="button" value="2" onclick="" />
+            <input class="button" type="button" value="3" onclick="" />
+            <input class="button" type="button" value="-" onclick="" />
+          </div>
+          <div class="button-row">
+            <input class="button" type="button" value="0" onclick="" />
+            <input class="button" type="button" value="." onclick="" />
+            <input class="button-top-equal" type="button" value="=" onclick="" />
+            <input class="button" type="button" value="+" onclick="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
