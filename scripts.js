@@ -41,7 +41,14 @@ buttons.forEach((button) => {
         newNumber(button.value);
         break;
       case "operator": //If an operator is selected, check if a number has been entered and store both in memory
-        currentData = operateInput(button.value, currentData);
+        // if - is selected and there is no current value, then add the - to the string instead of doing the operating
+        if (button.value == 'subtract' && getCurrentValue() == ''){
+          newNumber('-')
+        }
+        else{
+          currentData = operateInput(button.value, currentData);
+
+        }
         break;
       case "clear": // Wipe the display and reset any values in memory
         clearMemory();
